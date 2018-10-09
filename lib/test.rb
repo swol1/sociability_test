@@ -1,5 +1,5 @@
 class Test
-  attr_reader :questions
+  attr_reader :questions, :answer_points
 
   def initialize(questions)
     @answer_points = 0
@@ -16,7 +16,7 @@ class Test
   end
 
   def result_output(answers)
-    case @answer_points
+    case answer_points
     when 0..3
       answers[0]
     when 4..8
