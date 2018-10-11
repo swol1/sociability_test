@@ -1,9 +1,9 @@
 class Test
   attr_reader :questions, :answer_points
 
-  def initialize(questions)
+  def initialize(questions_file)
     @answer_points = 0
-    @questions = questions
+    @questions = File.readlines(questions_file, chomp: true)
   end
 
   def scoring(user_choice)
@@ -15,7 +15,9 @@ class Test
     end
   end
 
-  def result_output(answers)
+  def result_output(answers_file)
+    answers = File.readlines(answers_file, chomp: true)
+
     case answer_points
     when 0..3
       answers[0]
