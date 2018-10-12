@@ -1,7 +1,7 @@
 *вопросы и ответы на тест взяты с сайта http://psylist.net/praktikum/00003.htm*
+
 *(c) тест В.Ф. Ряховского*
 
-Источник: http://psylist.net/praktikum/00003.htm
 
 ## О программе
 
