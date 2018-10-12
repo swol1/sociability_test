@@ -29,5 +29,3 @@ person.questions.each do |item|
 end
 
 puts person.result_output(answers_path)
-
-
